@@ -1,0 +1,5 @@
+* text=auto
+
+*.docx binary
+*.mp4 binary
+*.sim1 text
