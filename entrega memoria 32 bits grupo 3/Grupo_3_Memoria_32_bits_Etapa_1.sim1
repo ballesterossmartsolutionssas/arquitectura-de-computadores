@@ -1,74 +1,171 @@
-<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="KeyPad" CircId="KeyPad-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-760,-40" rotation="0" hflip="1" vflip="1" label="Teclado Hex" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Rows="4 _Buttons" Cols="4 _Buttons" Key_Labels="0123456789ABCDEF" />
-<item itemtype="Subcircuit" CircId="MM74C922-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-560,-20" rotation="0" hflip="1" vflip="1" label="Encoder" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" />
-<item itemtype="Capacitor" CircId="Cap-OSC" mainComp="false" Show_id="false" Show_Val="true" Pos="-430,-60" rotation="0" hflip="1" vflip="1" label="Cap-OSC" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" ShowProp="Capacitance" Capacitance="100 nF" />
-<item itemtype="Ground" CircId="GND-ENC" mainComp="false" Show_id="false" Show_Val="false" Pos="-380,-60" rotation="0" hflip="1" vflip="1" label="GND-ENC" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" />
-<item itemtype="Rail" CircId="VCC-SEL" mainComp="false" Show_id="false" Show_Val="true" Pos="-760,180" rotation="0" hflip="1" vflip="1" label="VCC-SEL" idLabPos="-16,-24" labelrot="0" valLabPos="-12,8" valLabRot="0" ShowProp="Voltage" Voltage="5 V" />
-<item itemtype="Switch" CircId="SW-DIG" mainComp="false" Show_id="true" Show_Val="false" Pos="-680,180" rotation="0" hflip="1" vflip="1" label="Selector display" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
-<item itemtype="Node" CircId="SELD" mainComp="false" Pos="-600,180" />
-<item itemtype="Resistor" CircId="R-DIG" mainComp="false" Show_id="false" Show_Val="true" Pos="-600,225" rotation="0" hflip="1" vflip="1" label="R-DIG" idLabPos="-16,-24" labelrot="0" valLabPos="-12,8" valLabRot="0" ShowProp="Resistance" Resistance="10000 ?" />
-<item itemtype="Ground" CircId="GND-SEL" mainComp="false" Show_id="false" Show_Val="false" Pos="-600,270" rotation="0" hflip="1" vflip="1" label="GND-SEL" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" />
-<item itemtype="Buffer" CircId="INV-DIG" mainComp="false" Show_id="false" Show_Val="false" Pos="-470,180" rotation="0" hflip="1" vflip="1" label="INV-DIG" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Inverted="true" Tristate="false" Invert_Inputs="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+14 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
-<item itemtype="And Gate" CircId="AND-LOW" mainComp="false" Show_id="false" Show_Val="false" Pos="-320,150" rotation="0" hflip="1" vflip="1" label="AND-LOW" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+14 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
-<item itemtype="And Gate" CircId="AND-HIGH" mainComp="false" Show_id="false" Show_Val="false" Pos="-320,210" rotation="0" hflip="1" vflip="1" label="AND-HIGH" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Num_Inputs="2 _Inputs" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+14 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
-<item itemtype="Node" CircId="A" mainComp="false" Pos="-380,-40" />
-<item itemtype="Node" CircId="B" mainComp="false" Pos="-380,0" />
-<item itemtype="Node" CircId="C" mainComp="false" Pos="-380,40" />
-<item itemtype="Node" CircId="D" mainComp="false" Pos="-380,80" />
-<item itemtype="Node" CircId="DA" mainComp="false" Pos="-380,120" />
-<item itemtype="Node" CircId="ENL" mainComp="false" Pos="-200,150" />
-<item itemtype="Node" CircId="ENH" mainComp="false" Pos="-200,210" />
-<item itemtype="Subcircuit" CircId="74HC77-H" mainComp="false" Show_id="true" Show_Val="false" Pos="-40,-180" rotation="0" hflip="1" vflip="1" label="Latch alto" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" />
-<item itemtype="Subcircuit" CircId="74HC77-L" mainComp="false" Show_id="true" Show_Val="false" Pos="200,-180" rotation="0" hflip="1" vflip="1" label="Latch bajo" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" />
-<item itemtype="7-Seg BCD" CircId="WR-H" mainComp="false" Show_id="true" Show_Val="false" Pos="-40,-380" rotation="0" hflip="1" vflip="1" label="Display escritura H" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" />
-<item itemtype="7-Seg BCD" CircId="WR-L" mainComp="false" Show_id="true" Show_Val="false" Pos="200,-380" rotation="0" hflip="1" vflip="1" label="Display escritura L" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" />
+<item itemtype="KeyPad" CircId="KeyPad-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-720,-260" rotation="0" hflip="1" vflip="1" label="KeyPad-1" idLabPos="-8,-16" labelrot="0" valLabPos="0,0" valLabRot="0" Rows="4 _Buttons" Cols="4 _Buttons" Key_Labels="0123456789ABCDEF" />
 
-<item itemtype="Connector" uid="Connector-1" startpinid="MM74C922-1-A" endpinid="A-0" pointList="-560,-20,-380,-40" />
-<item itemtype="Connector" uid="Connector-2" startpinid="MM74C922-1-B" endpinid="B-0" pointList="-560,-20,-380,0" />
-<item itemtype="Connector" uid="Connector-3" startpinid="MM74C922-1-C" endpinid="C-0" pointList="-560,-20,-380,40" />
-<item itemtype="Connector" uid="Connector-4" startpinid="MM74C922-1-D" endpinid="D-0" pointList="-560,-20,-380,80" />
-<item itemtype="Connector" uid="Connector-5" startpinid="MM74C922-1-DA" endpinid="DA-0" pointList="-560,-20,-380,120" />
-<item itemtype="Connector" uid="Connector-6" startpinid="KeyPad-1-Pin0" endpinid="MM74C922-1-Y1" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-7" startpinid="KeyPad-1-Pin1" endpinid="MM74C922-1-Y2" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-8" startpinid="KeyPad-1-Pin2" endpinid="MM74C922-1-Y3" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-9" startpinid="KeyPad-1-Pin3" endpinid="MM74C922-1-Y4" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-10" startpinid="KeyPad-1-Pin4" endpinid="MM74C922-1-X1" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-11" startpinid="KeyPad-1-Pin5" endpinid="MM74C922-1-X2" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-12" startpinid="KeyPad-1-Pin6" endpinid="MM74C922-1-X3" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-13" startpinid="KeyPad-1-Pin7" endpinid="MM74C922-1-X4" pointList="-760,-40,-560,-20" />
-<item itemtype="Connector" uid="Connector-14" startpinid="Cap-OSC-lPin" endpinid="MM74C922-1-OSC" pointList="-430,-60,-560,-20" />
-<item itemtype="Connector" uid="Connector-15" startpinid="Cap-OSC-rPin" endpinid="GND-ENC-Gnd" pointList="-430,-60,-380,-60" />
-<item itemtype="Connector" uid="Connector-16" startpinid="VCC-SEL-outnod" endpinid="SW-DIG-pinP0" pointList="-760,180,-680,180" />
-<item itemtype="Connector" uid="Connector-17" startpinid="SW-DIG-switch0pinN" endpinid="SELD-0" pointList="-680,180,-600,180" />
-<item itemtype="Connector" uid="Connector-18" startpinid="SELD-1" endpinid="R-DIG-lPin" pointList="-600,180,-600,225" />
-<item itemtype="Connector" uid="Connector-19" startpinid="R-DIG-rPin" endpinid="GND-SEL-Gnd" pointList="-600,225,-600,270" />
-<item itemtype="Connector" uid="Connector-20" startpinid="SELD-2" endpinid="INV-DIG-in0" pointList="-600,180,-470,180" />
-<item itemtype="Connector" uid="Connector-21" startpinid="INV-DIG-out" endpinid="AND-LOW-in0" pointList="-470,180,-320,150" />
-<item itemtype="Connector" uid="Connector-22" startpinid="SELD-0" endpinid="AND-HIGH-in0" pointList="-600,180,-320,210" />
-<item itemtype="Connector" uid="Connector-23" startpinid="DA-1" endpinid="AND-LOW-in1" pointList="-380,120,-320,150" />
-<item itemtype="Connector" uid="Connector-24" startpinid="DA-2" endpinid="AND-HIGH-in1" pointList="-380,120,-320,210" />
-<item itemtype="Connector" uid="Connector-25" startpinid="AND-LOW-out" endpinid="ENL-0" pointList="-320,150,-200,150" />
-<item itemtype="Connector" uid="Connector-26" startpinid="AND-HIGH-out" endpinid="ENH-0" pointList="-320,210,-200,210" />
-<item itemtype="Connector" uid="Connector-27" startpinid="A-1" endpinid="74HC77-H-D0" pointList="-380,-40,-40,-180" />
-<item itemtype="Connector" uid="Connector-28" startpinid="A-2" endpinid="74HC77-L-D0" pointList="-380,-40,200,-180" />
-<item itemtype="Connector" uid="Connector-29" startpinid="B-1" endpinid="74HC77-H-D1" pointList="-380,0,-40,-180" />
-<item itemtype="Connector" uid="Connector-30" startpinid="B-2" endpinid="74HC77-L-D1" pointList="-380,0,200,-180" />
-<item itemtype="Connector" uid="Connector-31" startpinid="C-1" endpinid="74HC77-H-D2" pointList="-380,40,-40,-180" />
-<item itemtype="Connector" uid="Connector-32" startpinid="C-2" endpinid="74HC77-L-D2" pointList="-380,40,200,-180" />
-<item itemtype="Connector" uid="Connector-33" startpinid="D-1" endpinid="74HC77-H-D3" pointList="-380,80,-40,-180" />
-<item itemtype="Connector" uid="Connector-34" startpinid="D-2" endpinid="74HC77-L-D3" pointList="-380,80,200,-180" />
-<item itemtype="Connector" uid="Connector-35" startpinid="ENH-1" endpinid="74HC77-H-E01" pointList="-200,210,-40,-180" />
-<item itemtype="Connector" uid="Connector-36" startpinid="ENH-2" endpinid="74HC77-H-E23" pointList="-200,210,-40,-180" />
-<item itemtype="Connector" uid="Connector-37" startpinid="ENL-1" endpinid="74HC77-L-E01" pointList="-200,150,200,-180" />
-<item itemtype="Connector" uid="Connector-38" startpinid="ENL-2" endpinid="74HC77-L-E23" pointList="-200,150,200,-180" />
-<item itemtype="Connector" uid="Connector-39" startpinid="74HC77-H-Q0" endpinid="WR-H-in0" pointList="-40,-180,-40,-380" />
-<item itemtype="Connector" uid="Connector-40" startpinid="74HC77-L-Q0" endpinid="WR-L-in0" pointList="200,-180,200,-380" />
-<item itemtype="Connector" uid="Connector-41" startpinid="74HC77-H-Q1" endpinid="WR-H-in1" pointList="-40,-180,-40,-380" />
-<item itemtype="Connector" uid="Connector-42" startpinid="74HC77-L-Q1" endpinid="WR-L-in1" pointList="200,-180,200,-380" />
-<item itemtype="Connector" uid="Connector-43" startpinid="74HC77-H-Q2" endpinid="WR-H-in2" pointList="-40,-180,-40,-380" />
-<item itemtype="Connector" uid="Connector-44" startpinid="74HC77-L-Q2" endpinid="WR-L-in2" pointList="200,-180,200,-380" />
-<item itemtype="Connector" uid="Connector-45" startpinid="74HC77-H-Q3" endpinid="WR-H-in3" pointList="-40,-180,-40,-380" />
-<item itemtype="Connector" uid="Connector-46" startpinid="74HC77-L-Q3" endpinid="WR-L-in3" pointList="200,-180,200,-380" />
+<item itemtype="Subcircuit" CircId="MM74C922-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-560,-300" rotation="0" hflip="1" vflip="1" label="MM74C922-1" idLabPos="-16,-15" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="KeyPad-1-Pin0" endpinid="MM74C922-1-Y1" pointList="-656,-252,-568,-244" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="KeyPad-1-Pin1" endpinid="MM74C922-1-Y2" pointList="-656,-236,-568,-236" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="KeyPad-1-Pin2" endpinid="MM74C922-1-Y3" pointList="-656,-220,-568,-228" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="KeyPad-1-Pin3" endpinid="MM74C922-1-Y4" pointList="-656,-204,-568,-220" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="KeyPad-1-Pin4" endpinid="MM74C922-1-X1" pointList="-720,-188,-568,-292" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="KeyPad-1-Pin5" endpinid="MM74C922-1-X2" pointList="-704,-188,-568,-284" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="KeyPad-1-Pin6" endpinid="MM74C922-1-X3" pointList="-688,-188,-568,-276" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="KeyPad-1-Pin7" endpinid="MM74C922-1-X4" pointList="-672,-188,-568,-268" />
+
+<item itemtype="Capacitor" CircId="CapOSC-1" mainComp="false" Show_id="false" Show_Val="true" Pos="-520,-308" rotation="0" hflip="1" vflip="1" label="CapOSC-1" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" ShowProp="Capacitance" Capacitance="100 nF" />
+
+<item itemtype="Ground" CircId="Ground-OSC" mainComp="false" Show_id="false" Show_Val="false" Pos="-496,-280" rotation="0" hflip="1" vflip="1" label="Ground-OSC" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-1" mainComp="false" Pos="-540,-308" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="CapOSC-1-lPin" endpinid="Node-1-0" pointList="-536,-308,-540,-308" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Ground-OSC-Gnd" endpinid="CapOSC-1-rPin" pointList="-496,-296,-504,-308" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Node-1-1" endpinid="MM74C922-1-OSC" pointList="-540,-308,-588,-284" />
+
+<item itemtype="Ground" CircId="Ground-OE" mainComp="false" Show_id="false" Show_Val="false" Pos="-500,-244" rotation="0" hflip="1" vflip="1" label="Ground-OE" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Ground-OE-Gnd" endpinid="MM74C922-1-!OE" pointList="-500,-260,-520,-260" />
+
+<item itemtype="Demux" CircId="Demux-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-424,-248" rotation="0" hflip="1" vflip="1" label="SEL-DIGITO" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Address_Bits="1 _bits" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 M?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-SEL-DISPLAY" mainComp="false" Show_id="true" Show_Val="false" Pos="-500,-208" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-SEL-DISPLAY" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="MM74C922-1-DA" endpinid="Demux-1-in3" pointList="-520,-244,-448,-248" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Fixed Voltage-SEL-DISPLAY-outnod" endpinid="Demux-1-in0" pointList="-484,-208,-416,-224" />
+
+<item itemtype="Subcircuit" CircId="74HC77-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-280,-320" rotation="0" hflip="1" vflip="1" label="REG-DIGITO-BAJO" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Subcircuit" CircId="74HC77-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-280,-184" rotation="0" hflip="1" vflip="1" label="REG-DIGITO-ALTO" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="true" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 ?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Node" CircId="Node-2" mainComp="false" Pos="-360,-244" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="MM74C922-1-A" endpinid="Node-2-0" pointList="-520,-244,-360,-244" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Node-2-1" endpinid="74HC77-1-D0" pointList="-360,-244,-288,-312" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Node-2-2" endpinid="74HC77-2-D0" pointList="-360,-244,-288,-176" />
+
+<item itemtype="Node" CircId="Node-3" mainComp="false" Pos="-360,-236" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="MM74C922-1-B" endpinid="Node-3-0" pointList="-520,-236,-360,-236" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Node-3-1" endpinid="74HC77-1-D1" pointList="-360,-236,-288,-304" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Node-3-2" endpinid="74HC77-2-D1" pointList="-360,-236,-288,-168" />
+
+<item itemtype="Node" CircId="Node-4" mainComp="false" Pos="-360,-228" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="MM74C922-1-C" endpinid="Node-4-0" pointList="-520,-228,-360,-228" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Node-4-1" endpinid="74HC77-1-D2" pointList="-360,-228,-288,-296" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Node-4-2" endpinid="74HC77-2-D2" pointList="-360,-228,-288,-160" />
+
+<item itemtype="Node" CircId="Node-5" mainComp="false" Pos="-360,-220" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="MM74C922-1-D" endpinid="Node-5-0" pointList="-520,-220,-360,-220" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-5-1" endpinid="74HC77-1-D3" pointList="-360,-220,-288,-288" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-5-2" endpinid="74HC77-2-D3" pointList="-360,-220,-288,-152" />
+
+<item itemtype="Node" CircId="Node-6" mainComp="false" Pos="-352,-296" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Demux-1-out0" endpinid="Node-6-0" pointList="-400,-256,-352,-296" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Node-6-1" endpinid="74HC77-1-E01" pointList="-352,-296,-240,-296" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Node-6-2" endpinid="74HC77-1-E23" pointList="-352,-296,-288,-304" />
+
+<item itemtype="Node" CircId="Node-7" mainComp="false" Pos="-352,-160" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Demux-1-out1" endpinid="Node-7-0" pointList="-400,-248,-352,-160" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Node-7-1" endpinid="74HC77-2-E01" pointList="-352,-160,-240,-160" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Node-7-2" endpinid="74HC77-2-E23" pointList="-352,-160,-288,-168" />
+
+<item itemtype="BcdTo7S" CircId="BcdTo7S-WRITE0" mainComp="false" Show_id="false" Show_Val="false" Pos="40,-360" rotation="0" hflip="1" vflip="1" label="BcdTo7S-WRITE0" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Invert_Inputs="false" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 M?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-WRITE0" mainComp="false" Show_id="false" Show_Val="false" Pos="136,-380" rotation="0" hflip="1" vflip="1" label="Seven Segment-WRITE0" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 ?" />
+
+<item itemtype="Ground" CircId="Ground-WRITE0" mainComp="false" Show_id="false" Show_Val="false" Pos="180,-316" rotation="0" hflip="1" vflip="1" label="Ground-WRITE0" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="BcdTo7S-WRITE0-out0" endpinid="Seven Segment-WRITE0-pin_a" pointList="64,-376,120,-396" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="BcdTo7S-WRITE0-out1" endpinid="Seven Segment-WRITE0-pin_b" pointList="64,-368,120,-388" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="BcdTo7S-WRITE0-out2" endpinid="Seven Segment-WRITE0-pin_c" pointList="64,-360,120,-380" />
+
+<item itemtype="Connector" uid="Connector-36" startpinid="BcdTo7S-WRITE0-out3" endpinid="Seven Segment-WRITE0-pin_d" pointList="64,-352,120,-372" />
+
+<item itemtype="Connector" uid="Connector-37" startpinid="BcdTo7S-WRITE0-out4" endpinid="Seven Segment-WRITE0-pin_e" pointList="64,-344,120,-364" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="BcdTo7S-WRITE0-out5" endpinid="Seven Segment-WRITE0-pin_f" pointList="64,-336,120,-356" />
+
+<item itemtype="Connector" uid="Connector-39" startpinid="BcdTo7S-WRITE0-out6" endpinid="Seven Segment-WRITE0-pin_g" pointList="64,-328,120,-348" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="160,-320" />
+
+<item itemtype="Connector" uid="Connector-40" startpinid="Ground-WRITE0-Gnd" endpinid="Node-8-0" pointList="180,-332,160,-320" />
+
+<item itemtype="Connector" uid="Connector-41" startpinid="Node-8-1" endpinid="Seven Segment-WRITE0-pin_commona" pointList="160,-320,144,-316" />
+
+<item itemtype="Connector" uid="Connector-42" startpinid="Node-8-2" endpinid="BcdTo7S-WRITE0-in4" pointList="160,-320,16,-320" />
+
+<item itemtype="BcdTo7S" CircId="BcdTo7S-WRITE1" mainComp="false" Show_id="false" Show_Val="false" Pos="40,-180" rotation="0" hflip="1" vflip="1" label="BcdTo7S-WRITE1" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Invert_Inputs="false" Inverted="false" Open_Collector="false" pd_n="1 _Gates" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 M?" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 ?" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-WRITE1" mainComp="false" Show_id="false" Show_Val="false" Pos="136,-200" rotation="0" hflip="1" vflip="1" label="Seven Segment-WRITE1" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" NumDisplays="1" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="20 mA" Resistance="1 ?" />
+
+<item itemtype="Ground" CircId="Ground-WRITE1" mainComp="false" Show_id="false" Show_Val="false" Pos="180,-136" rotation="0" hflip="1" vflip="1" label="Ground-WRITE1" idLabPos="-16,8" labelrot="0" valLabPos="0,0" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="BcdTo7S-WRITE1-out0" endpinid="Seven Segment-WRITE1-pin_a" pointList="64,-196,120,-216" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="BcdTo7S-WRITE1-out1" endpinid="Seven Segment-WRITE1-pin_b" pointList="64,-188,120,-208" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="BcdTo7S-WRITE1-out2" endpinid="Seven Segment-WRITE1-pin_c" pointList="64,-180,120,-200" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="BcdTo7S-WRITE1-out3" endpinid="Seven Segment-WRITE1-pin_d" pointList="64,-172,120,-192" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="BcdTo7S-WRITE1-out4" endpinid="Seven Segment-WRITE1-pin_e" pointList="64,-164,120,-184" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="BcdTo7S-WRITE1-out5" endpinid="Seven Segment-WRITE1-pin_f" pointList="64,-156,120,-176" />
+
+<item itemtype="Connector" uid="Connector-49" startpinid="BcdTo7S-WRITE1-out6" endpinid="Seven Segment-WRITE1-pin_g" pointList="64,-148,120,-168" />
+
+<item itemtype="Node" CircId="Node-9" mainComp="false" Pos="160,-140" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="Ground-WRITE1-Gnd" endpinid="Node-9-0" pointList="180,-152,160,-140" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="Node-9-1" endpinid="Seven Segment-WRITE1-pin_commona" pointList="160,-140,144,-136" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="Node-9-2" endpinid="BcdTo7S-WRITE1-in4" pointList="160,-140,16,-140" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="74HC77-1-Q0" endpinid="BcdTo7S-WRITE0-in0" pointList="-240,-312,16,-368" />
+
+<item itemtype="Connector" uid="Connector-54" startpinid="74HC77-2-Q0" endpinid="BcdTo7S-WRITE1-in0" pointList="-240,-176,16,-188" />
+
+<item itemtype="Connector" uid="Connector-55" startpinid="74HC77-1-Q1" endpinid="BcdTo7S-WRITE0-in1" pointList="-240,-304,16,-360" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="74HC77-2-Q1" endpinid="BcdTo7S-WRITE1-in1" pointList="-240,-168,16,-180" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="74HC77-1-Q2" endpinid="BcdTo7S-WRITE0-in2" pointList="-240,-296,16,-352" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="74HC77-2-Q2" endpinid="BcdTo7S-WRITE1-in2" pointList="-240,-160,16,-172" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="74HC77-1-Q3" endpinid="BcdTo7S-WRITE0-in3" pointList="-240,-288,16,-344" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="74HC77-2-Q3" endpinid="BcdTo7S-WRITE1-in3" pointList="-240,-152,16,-164" />
 
 </circuit>
